@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'My App',
         theme: miTema,
-        home: TabsPage(),
+        home: SafeArea(
+          child: TabsPage(),
+        ),
       ),
     );
   }
